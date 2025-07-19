@@ -32,3 +32,46 @@
   <script src="script.js"></script>
 </body>
 </html>
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#display {
+  width: 100%;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5em;
+  margin: 5px;
+}
+function appendValue(val) {
+  document.getElementById('display').value += val;
+}
+
+function clearDisplay() {
+  document.getElementById('display').value = '';
+}
+
+function calculate() {
+  try {
+    document.getElementById('display').value = eval(document.getElementById('display').value);
+  } catch {
+    alert("Invalid Input");
+  }
+}
