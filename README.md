@@ -1,46 +1,68 @@
-WEB CALCULATOR 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-A simple and responsive web calculator built using **HTML**, **CSS**, and **JavaScript**. This project performs basic arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division**. It is fully functional, interactive, and designed with a clean UI.
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f3f4f6;
+}
 
----
+.calculator {
+  background-color: #1f2937;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
 
-## 📸 Preview
+#display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 28px;
+  text-align: right;
+  margin-bottom: 15px;
+  color: #111827;
+}
 
-![Calculator Screenshot](screenshot.png) <!-- Replace with your actual screenshot file -->
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
 
----
+button {
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #374151;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-## 🚀 Live Demo
+button:hover {
+  background-color: #4b5563;
+}
 
-🔗 [Click here to view the live demo](https://BtsAgilan07.github.io/web-calculator)  
-<!-- Replace with your actual GitHub Pages or Netlify link -->
+.equal {
+  grid-row: span 2;
+  background-color: #10b981;
+}
 
----
+.equal:hover {
+  background-color: #059669;
+}
 
-## ✨ Features
-
-- User-friendly interface
-- Supports:
-  - Addition (+)
-  - Subtraction (−)
-  - Multiplication (×)
-  - Division (÷)
-- **Clear (C)** and **Backspace (←)** functionality
-- Keyboard input support
-- Fully responsive design (mobile & desktop)
-
----
-
-## 🛠️ Technologies Used
-
-- ✅ HTML5  
-- ✅ CSS3  
-- ✅ JavaScript (Vanilla)  
-
----
-
-## 📁 How to Use
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/web-calculator.git
+.zero {
+  grid-column: span 2;
+}
