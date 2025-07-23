@@ -1,61 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Calculator</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="calculator">
-    <input type="text" id="display" disabled />
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="backspace()">←</button>
-      <button onclick="append('/')">÷</button>
-      <button onclick="append('*')">×</button>
+Web Calculator 🔢
 
-      <button onclick="append('7')">7</button>
-      <button onclick="append('8')">8</button>
-      <button onclick="append('9')">9</button>
-      <button onclick="append('-')">−</button>
+A simple, responsive, and easy-to-use web calculator built using **HTML**, **CSS**, and **JavaScript**. This calculator performs basic arithmetic operations like addition, subtraction, multiplication, and division.
 
-      <button onclick="append('4')">4</button>
-      <button onclick="append('5')">5</button>
-      <button onclick="append('6')">6</button>
-      <button onclick="append('+')">+</button>
+## 🖥️ Demo
 
-      <button onclick="append('1')">1</button>
-      <button onclick="append('2')">2</button>
-      <button onclick="append('3')">3</button>
-      <button onclick="calculate()" class="equal">=</button>
+Click here to view the calculator live: [Live Demo](#)  
+*(Replace `#` with your GitHub Pages link)*
 
-      <button onclick="append('0')" class="zero">0</button>
-      <button onclick="append('.')">.</button>
-    </div>
-  </div>
+## 📸 Screenshot
 
-  <script>
-    function append(value) {
-      document.getElementById('display').value += value;
-    }
+![Web Calculator Screenshot](screenshot.png)  
+*(Make sure to upload and rename your image as `screenshot.png` or change the file name above.)*
 
-    function clearDisplay() {
-      document.getElementById('display').value = '';
-    }
+## ✨ Features
 
-    function backspace() {
-      let current = document.getElementById('display').value;
-      document.getElementById('display').value = current.slice(0, -1);
-    }
+- Clean and modern UI
+- Fully responsive design
+- Perform basic math operations
+- Keyboard input support (optional enhancement)
+- Light and fast
 
-    function calculate() {
-      try {
-        document.getElementById('display').value = eval(document.getElementById('display').value);
-      } catch {
-        document.getElementById('display').value = 'Error';
-      }
-    }
-  </script>
-</body>
-</html>
+## 🚀 Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 📁 Folder Structure
