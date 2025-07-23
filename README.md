@@ -12,7 +12,7 @@ A simple and responsive web calculator built using **HTML**, **CSS**, and **Java
 
 ## 🚀 Live Demo
 
-🔗 [Click here to view the live demo](https://your-username.github.io/web-calculator)  
+🔗 [Click here to view the live demo](https://BtsAgilan07.github.io/web-calculator)  
 <!-- Replace with your actual GitHub Pages or Netlify link -->
 
 ---
