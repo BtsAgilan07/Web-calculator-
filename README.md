@@ -1,77 +1,46 @@
-# Web-calculator-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Calculator</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="calculator">
-    <input type="text" id="display" disabled>
-    <div class="buttons">
-      <button onclick="clearDisplay()">C</button>
-      <button onclick="appendValue('1')">1</button>
-      <button onclick="appendValue('2')">2</button>
-      <button onclick="appendValue('+')">+</button>
-      <button onclick="appendValue('3')">3</button>
-      <button onclick="appendValue('4')">4</button>
-      <button onclick="appendValue('-')">-</button>
-      <button onclick="appendValue('5')">5</button>
-      <button onclick="appendValue('6')">6</button>
-      <button onclick="appendValue('*')">*</button>
-      <button onclick="appendValue('7')">7</button>
-      <button onclick="appendValue('8')">8</button>
-      <button onclick="appendValue('/')">/</button>
-      <button onclick="calculate()">=</button>
-      <button onclick="appendValue('9')">9</button>
-      <button onclick="appendValue('0')">0</button>
-      <button onclick="appendValue('.')">.</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
-body {
-  font-family: Arial;
-  background: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+WEB CALCULATOR 
 
-.calculator {
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+A simple and responsive web calculator built using **HTML**, **CSS**, and **JavaScript**. This project performs basic arithmetic operations such as **addition**, **subtraction**, **multiplication**, and **division**. It is fully functional, interactive, and designed with a clean UI.
 
-#display {
-  width: 100%;
-  font-size: 2em;
-  margin-bottom: 10px;
-}
+---
 
-.buttons button {
-  width: 60px;
-  height: 60px;
-  font-size: 1.5em;
-  margin: 5px;
-}
-function appendValue(val) {
-  document.getElementById('display').value += val;
-}
+## 📸 Preview
 
-function clearDisplay() {
-  document.getElementById('display').value = '';
-}
+![Calculator Screenshot](screenshot.png) <!-- Replace with your actual screenshot file -->
 
-function calculate() {
-  try {
-    document.getElementById('display').value = eval(document.getElementById('display').value);
-  } catch {
-    alert("Invalid Input");
-  }
-}
+---
+
+## 🚀 Live Demo
+
+🔗 [Click here to view the live demo](https://your-username.github.io/web-calculator)  
+<!-- Replace with your actual GitHub Pages or Netlify link -->
+
+---
+
+## ✨ Features
+
+- User-friendly interface
+- Supports:
+  - Addition (+)
+  - Subtraction (−)
+  - Multiplication (×)
+  - Division (÷)
+- **Clear (C)** and **Backspace (←)** functionality
+- Keyboard input support
+- Fully responsive design (mobile & desktop)
+
+---
+
+## 🛠️ Technologies Used
+
+- ✅ HTML5  
+- ✅ CSS3  
+- ✅ JavaScript (Vanilla)  
+
+---
+
+## 📁 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/web-calculator.git
